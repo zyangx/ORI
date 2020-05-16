@@ -1,4 +1,8 @@
-load("../data/U4529d3.rda")
+#load("../data/U4529d3.rda")
+load("../data/U4529d3_1.rda")
+load("../data/U4529d3_2.rda")
+load("../data/U4529d3_3.rda")
+
 load("../data/S450.rda")
 load("../data/GOstat.rda")
 #load("testData.Rdata")
