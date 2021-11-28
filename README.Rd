@@ -11,8 +11,22 @@ LazyData: true
 
 ### Example
 
-##load the read data in the data subfolder
-load()
+##load the example data and code
+library("impute")
+library("RColorBrewer")
+library("ggpubr")
+library("wordcloud")
+
+load("../data/U4529d3.rda")
+load("../data/S450.rda")
+load("../data/GOstat.rda")
+load("../data/testdata2.Rdata")
+
+source("./coorTrans.R")
+source("./getDiffDim.R")
+source("./plotParaC.R")
+source("./plot2Dscatter.R")
+source("./plotGOterm.R")
 
 # get New Dim(coordinates) for the Input data
 newCoor.m <- coorTrans(expSel.m)
