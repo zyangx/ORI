@@ -11,7 +11,7 @@ tmp.m <- scale(input.m)
 inputNorm.m <-matrix(0,nrow=nrow(tmp.m),ncol=ncol(tmp.m));
 for (i in 1:ncol(tmp.m)){
     temp <- tmp.m[,i]
-    temp <- (temp+3)*(temp>-3)-(temp+3)*(temp>3);
+    temp <- (temp+3)*(temp>-3)-(temp-3)*(temp>3);
     temp <- temp/6;
     inputNorm.m[,i] <- temp;
 };
